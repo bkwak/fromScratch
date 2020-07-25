@@ -5,7 +5,7 @@ const { Sequelize, Model, DataTypes } = require('sequelize');
 const sequelize = new Sequelize(
   'postgres://hudpsnyd:FSIaGHqKct-GrQurZzL55Mn2uZF5EbIU@ruby.db.elephantsql.com:5432/hudpsnyd',
   {
-    logging: (...msg) => console.log(msg),
+    logging: console.log,
     dialect: 'postgres',
     define: {
       freezeTableName: true,
